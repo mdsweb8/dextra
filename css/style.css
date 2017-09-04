@@ -1,0 +1,429 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:500,700,900");
+/* line 3, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* line 42, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+.padding {
+  padding-bottom: 80px;
+}
+
+/* line 47, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+h1 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 4.8em;
+  line-height: 50px;
+  display: inline;
+}
+
+/* line 50, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+span {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.6em;
+  line-height: 36px;
+  display: inline;
+}
+
+/* line 54, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 30px;
+}
+
+/* line 58, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+.o {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 4.8em;
+  line-height: 50px;
+  display: inline;
+  font-size: 1em;
+  color: #a6d10f;
+}
+
+/* line 63, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+.x {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 4.8em;
+  line-height: 50px;
+  display: inline;
+  font-size: 1em;
+  color: #006599;
+}
+
+/* line 70, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+::selection {
+  color: #FFF;
+  background: #a6d10f;
+}
+
+/* line 74, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+.wow:first-child {
+  visibility: hidden;
+}
+
+/* line 77, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  text-decoration: none;
+}
+
+/* line 85, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+.full {
+  height: 100%;
+  width: 100%;
+}
+
+/* line 89, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+.txt-rotate {
+  font-weight: 500;
+  font-size: 1.4em;
+}
+
+/* line 93, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+.none {
+  display: none;
+}
+
+/* line 99, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+button {
+  width: auto;
+  height: 60px;
+  margin: 50px 0 10px 0;
+  padding: 20px 40px 20px 40px;
+  text-align: center;
+  background-color: #a6d10f;
+  border-radius: 10px;
+  border: 0;
+  color: #252525;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 1px 1px 1px #000;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* line 114, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+button:hover {
+  border-bottom: solid 3px #000;
+}
+
+/* line 121, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+#dextra {
+  background-image: url(../img/bg-dex.png);
+  background-attachment: fixed;
+  text-align: center;
+}
+
+/* line 126, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+#milestones {
+  height: 350px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+/* line 131, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+#solucoes {
+  background-image: url(../img/bg-tra.png);
+  background-attachment: fixed;
+  text-align: justify;
+  color: #FFFFFF;
+}
+
+/* line 136, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+#solucoes h2 {
+  color: #a6d10f;
+}
+
+/* line 140, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+#cases {
+  background-image: url(../img/bg-dex.png);
+  background-attachment: fixed;
+  text-align: center;
+}
+
+/* line 144, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+#cases h2 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+/* line 150, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+#frase {
+  height: 350px;
+  color: #a6d10f;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+/* line 156, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+#contato {
+  background-color: #252525;
+  background-attachment: fixed;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/* line 161, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+#contato h2 {
+  color: #a6d10f;
+}
+
+/* line 164, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+#contato hr {
+  background-color: #333;
+  width: 90%;
+  margin: 80px 0 30px 0;
+  height: 1px;
+  border: 0;
+}
+
+/* line 171, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+#contato .col-md-2 {
+  margin-top: 80px;
+}
+
+/* line 179, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+.main {
+  width: 90%;
+  z-index: 999;
+}
+
+/* line 182, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+nav {
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+  transition: .5s;
+  background-color: #000000;
+  position: fixed;
+  z-index: 9999;
+}
+
+/* line 191, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+.nav-cont {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* line 198, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+.height-auto {
+  height: auto;
+  transition: 1s;
+}
+
+/* line 202, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+.height-fixed {
+  height: 330px;
+}
+
+/* line 205, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+#list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* line 210, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+#list a {
+  margin: 10px 5px 5px;
+  width: auto;
+  padding-right: 25px;
+  text-align: center;
+  text-decoration: none;
+  color: #FFF;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: .9em;
+}
+
+/* line 221, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+#list a:hover {
+  color: #a6d10f;
+}
+
+/* line 224, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+#hamburger {
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 0;
+  margin-right: 5px;
+}
+
+/* line 232, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+#logo {
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+@media (max-width: 780px) {
+  /* line 241, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+  .full {
+    height: auto;
+  }
+  /* line 244, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+  .esconder {
+    display: none;
+  }
+  /* line 247, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+  h1 {
+    line-height: normal !important;
+    text-align: center;
+    font-size: 3em;
+  }
+  /* line 252, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+  span {
+    line-height: normal !important;
+    font-size: 1.2em;
+    display: block;
+  }
+  /* line 257, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+  #solucoes {
+    text-align: center;
+  }
+  /* line 261, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+  #contato .col-md-4 {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 750px) {
+  /* line 268, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+  #hamburger {
+    display: none;
+  }
+  /* line 271, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+  #list {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 120px;
+  }
+  /* line 277, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+  .height-fixed {
+    height: 51px;
+  }
+  /* line 280, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+  #list a {
+    margin: 20px 1px;
+    color: #FFF;
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: .9em;
+  }
+  /* line 288, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+  nav {
+    display: flex;
+    height: 80px;
+    z-index: 9999;
+  }
+  /* line 293, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+  #logo {
+    margin-top: -10px;
+    margin-left: 120px !important;
+  }
+}
+
+/* line 315, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+.fullscreen {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+
+/* line 323, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+.fullscreen::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+/* line 334, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 341, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+.home-content {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 999;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* line 349, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+.home-content span {
+  color: #FFFFFF;
+  line-height: 45px;
+}
+
+@media (min-aspect-ratio: 16 / 9) {
+  /* line 355, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+  .video {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16 / 9) {
+  /* line 361, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+  .video {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 367, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+  .fullscreen {
+    background-color: #252525;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  /* line 371, C:/Users/Computador/Desktop/MAMP/dextra/scss/style.scss */
+  .video {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=../css/style.map */
