@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:500,700,900');
+
+html, body{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    font-family: 'Raleway', sans-serif;
+}
+
+// CORES 
+
+$azul:#006599;
+$verde:#a6d10f;
+$black:#252525;
+$white:#FFFFFF;
+$gray-base:#000;
+
+// FONTES E TITULOS
+
+@mixin titulo {
+    font-style:normal;
+    font-weight:900;
+    font-size:4.8em;
+    line-height:50px;
+    display:inline;
+}
+@mixin subtitulo {
+    font-style:normal;
+    font-weight:700;
+    font-size:2.6em;
+    line-height:36px;
+    display:inline;
+}
+@mixin paragrafo {
+    font-style:normal;
+    font-weight:500;
+    font-size:1em;
+    line-height:30px;    
+}
+
+.padding {
+    padding-bottom:80px;
+}
+
+
+h1 {
+    @include titulo;
+}
+span {
+    @include subtitulo;
+    
+}
+p {
+    @include paragrafo;
+}
+
+.o {
+    @include titulo;
+    font-size:1em;
+    color:$verde;
+}
+.x {
+    @include titulo;
+    font-size:1em;
+    color:$azul;
+}
+// CONFIGURAÇÕES
+
+::selection {
+    color:#FFF;
+    background:$verde;
+}
+.wow:first-child {
+    visibility:hidden;
+}
+*,
+*:before,
+*:after{
+    -webkit-box-sizing:inherit;
+    -moz-box-sizing:inherit;
+    box-sizing:inherit;
+    text-decoration:none;
+}
+.full{
+    height:100%;
+    width:100%;
+}
+.txt-rotate {
+  font-weight:500;
+  font-size:1.4em;
+}
+.none {
+    display:none;
+}
+
+// BOTÃO
+
+button {
+    width:auto;
+    height:60px;
+    margin:50px 0 10px 0;
+    padding:20px 40px 20px 40px;
+    text-align:center;
+    background-color:$verde;
+    border-radius:10px;
+    border:0;
+    color:$black;
+    font-weight:bold;
+    text-transform:uppercase;
+    box-shadow:1px 1px 1px #000;
+    font-family:'Raleway', sans-serif;
+}
+button:hover {
+    border-bottom:solid 3px #000;
+}
+
+
+// SECTIONS
+
+#dextra {
+    background-image:url(../img/bg-dex.png);
+    background-attachment:fixed;
+    text-align:center;
+}
+#milestones {
+    height:350px;
+    color:#FFFFFF;
+    text-align:center;
+}
+#solucoes {
+    background-image:url(../img/bg-tra.png);
+    background-attachment:fixed;
+    text-align:justify;
+    color:$white;
+    h2 {
+        color:$verde;
+    }
+}
+#cases {
+    background-image:url(../img/bg-dex.png);
+    background-attachment:fixed;
+    text-align:center;
+    h2 {
+        font-size:3em;
+        font-weight:bold;
+        
+    }
+}
+#frase {
+    height:350px;
+    color:$verde;
+    font-size:1.4em;
+    text-align:center;
+}
+#contato {
+    background-color:$black;
+    background-attachment: fixed;
+    text-align:center;
+    color:$white;
+    h2 {
+        color:$verde;
+    }
+    hr {
+        background-color:#333;
+        width:90%;
+        margin:80px 0 30px 0;
+        height:1px;
+        border:0;
+    }
+    .col-md-2 {
+        margin-top:80px;
+    }
+}
+
+
+// MENU
+
+.main{
+    width:90%;z-index:999;
+}
+nav{
+    height:100px;
+    width:100%;
+    overflow:hidden;
+    transition:.5s;
+    background-color:#000000;
+    position:fixed;
+    z-index:9999;
+}
+.nav-cont{
+    width:100%;
+    height:100px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.height-auto{
+    height:auto;
+    transition:1s;
+}
+.height-fixed{
+    height:330px;
+}
+#list{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+}
+#list a{
+    margin:10px 5px 5px;
+    width:auto;
+    padding-right:25px;
+    text-align:center;
+    text-decoration:none;
+    color:#FFF;
+    font-weight:bold;
+    text-transform:capitalize;
+    font-size:.9em;
+}
+#list a:hover{
+    color:$verde;
+}
+#hamburger{
+    width:40px;
+    height:40px;
+    background-size:cover;
+    background-position:center;
+    margin-bottom:0;
+    margin-right:5px;
+}
+#logo{
+    margin-top:15px;
+    margin-left:20px;
+}
+
+// RESPONSIVE
+
+
+@media (max-width:780px){
+    .full{
+        height:auto;
+    } 
+    .esconder{
+        display:none;
+    }
+    h1 {
+        line-height:normal !important;
+        text-align:center;
+        font-size:3em;
+    }
+    span {
+        line-height:normal !important;
+        font-size:1.2em;
+        display:block
+    }
+    #solucoes {
+        text-align:center;
+    }
+    #contato {
+        .col-md-4 {
+            margin-bottom:50px;
+        }
+    }
+    
+}
+@media (min-width:750px){
+	#hamburger{
+        display:none;
+    }
+	#list{
+        flex-direction:row;
+        align-items:center;
+        justify-content:flex-end;
+        margin-right:120px;
+    }
+	.height-fixed{
+        height:51px;
+    }
+	#list a{
+        margin:20px 1px;
+        color:#FFF;
+        text-align:center;
+        font-weight:bold;
+        text-transform:capitalize;
+        font-size:.9em;
+    }
+	nav{
+        display:flex;
+        height:80px;
+        z-index:9999;}
+    
+	#logo{
+        margin-top:-10px;
+        margin-left:120px !important;
+    }
+}
+
+
+
+// BG VIDEO
+
+@mixin translate($x, $y) {
+  -webkit-transform: translate($x, $y);
+  -ms-transform: translate($x, $y); // IE9 only
+  -o-transform: translate($x, $y);
+  transform: translate($x, $y);
+}
+@mixin background-size($size) {
+ -webkit-background-size: $size;
+    -moz-background-size: $size;
+    -o-background-size: $size;
+    background-size: $size ;
+}
+.fullscreen {
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  overflow:hidden;
+  z-index:-100;
+    &::before {
+        content:"";
+        position:absolute;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        background:rgba($gray-base, .4);
+        z-index:1;
+    }
+}
+.video {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+.home-content {
+    width:100%;
+    position:absolute;
+    left:50%;
+    top:50%;
+    z-index:999;
+    text-align:center;
+    @include translate(-50%, -50%); 
+    span {
+        color:#FFFFFF;
+        line-height:45px;
+    }
+}
+@media (min-aspect-ratio: 16/9) {
+  .video {
+    height:300%;
+    top:-100%;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video {
+    width:300%;
+    left:-100%;
+  }
+}
+@media (max-width: 767px) {
+  .fullscreen {
+    background-color:$black;
+    @include background-size(cover);
+  }
+  .video {
+    display: none;
+  }
+}
+
+
+
